@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="XIYI 西一创造局 — 把品牌活动、空间体验、内容传播和 AI 创意拧成一个能被看见、被体验、被记住的现场。" />
+  <meta name="theme-color" content="#080808" />
+  <title>XIYI 西一创造局 | Creative Experience Studio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preload" href="hero-brand-x.png" as="image" />
+
+  <!-- Fonts: self-hosted swap for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div class="loader" data-loader>
+    <div class="loader-inner">
+      <div class="loader-brand">XIYI<span class="tm">TM</span></div>
+      <div class="loader-line"><div class="loader-progress" data-loader-progress></div></div>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-ring" data-cursor-ring></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" data-header>
+    <a class="brand-mark" href="#top" aria-label="XIYI 首页">
+      <span>XIYI</span><sup>TM</sup>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-menu" aria-label="主导航">
+      <a href="#work">案例</a>
+      <a href="#capabilities">能力</a>
+      <a href="#studio">关于</a>
+      <a href="#lab">实验室</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <a class="header-action" href="#contact">开始合作 <span aria-hidden="true">&rarr;</span></a>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <!-- FIX #1: Hero stack reduced to 4 elements: eyebrow, h1, lede, 1 CTA -->
+    <!-- FIX #6: Removed hero-metric dashboard (hero-metric template ban) -->
+    <section class="hero" id="top" data-section>
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline poster="hero-brand-x.png" preload="metadata" data-hero-video>
+          <source src="hero-kv.mp4" type="video/mp4" />
+        </video>
+        <img src="hero-brand-x.png" alt="" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-noise" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <h1 class="split-text">
+          <span class="hero-word">把现场的能量</span>
+          <span class="hero-word">留在屏幕里</span>
+        </h1>
+        <p class="hero-lede split-text">
+          品牌活动、空间体验、内容传播和 AI 创意，拧成一个能被看见、被体验、被记住的现场。
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#work">看精选案例 <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span class="hero-slogan">Creative Experience Studio / Wuhan</span>
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="scroll-line"></div>
+          <span>Scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SIGNAL STRIP (MARQUEE) ===== -->
+    <section class="signal-strip" aria-label="服务摘要">
+      <div class="marquee-track" data-marquee>
+        <div class="marquee-content">
+          <a href="#capabilities">活动策划</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">空间美陈</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">内容传播</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">视觉设计</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">舞美工程</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#lab">AI 创意</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">活动策划</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">空间美陈</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">内容传播</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">视觉设计</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#capabilities">舞美工程</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+          <a href="#lab">AI 创意</a>
+          <span class="marquee-dot" aria-hidden="true">&#9670;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STUDIO / ABOUT ===== -->
+    <!-- FIX #2: Only 2 eyebrows on entire page (this one gets it) -->
+    <!-- FIX #3: Full-bleed editorial layout instead of split-header -->
+    <!-- FIX #4: Vertical stack, not left-text-right-image -->
+    <section class="section section-light studio-section" id="studio" data-section>
+      <div class="studio-hero-row">
+        <div class="studio-hero-text">
+          <span class="section-kicker reveal-text">Who we are</span>
+          <h2 class="reveal-text">不是执行供应商，<br>是体验共创团队。</h2>
+        </div>
+        <div class="studio-hero-media tilt-card">
+          <img src="about-team.png" alt="XIYI 团队视觉" loading="lazy" />
+        </div>
+      </div>
+      <p class="studio-body reveal-text">
+        XIYI（西一创造局）成立于 2023 年，总部位于武汉。我们把创意策略、空间视觉、现场工程和内容资产放在同一张工作台上，让品牌每一次出现都更有记忆点。
+      </p>
+      <div class="studio-proof">
+        <div class="proof-item reveal-text">
+          <strong>从概念到现场</strong>
+          <p>早期方案就同步考虑动线、预算、施工、传播素材和现场情绪。</p>
+        </div>
+        <div class="proof-item reveal-text">
+          <strong>从活动到内容</strong>
+          <p>让每个节点都能生成可二次传播的画面、视频和社交素材。</p>
+        </div>
+        <div class="proof-item reveal-text">
+          <strong>从灵感到可交付</strong>
+          <p>用可验证的原型、清晰排期和现场执行标准把想法落地。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAPABILITIES ===== -->
+    <!-- FIX #2: No eyebrow on this section -->
+    <!-- FIX #5: Asymmetric bento grid, NOT identical cards -->
+    <section class="section section-dark capabilities-section" id="capabilities" data-section>
+      <div class="section-heading">
+        <h2 class="reveal-text">六大核心能力，围绕"现场记忆点"形成闭环。</h2>
+      </div>
+
+      <div class="capability-bento">
+        <article class="capability-card cap-large tilt-card">
+          <img src="cap-experience.jpg" alt="体验营销项目现场" loading="lazy" />
+          <div class="capability-copy">
+            <h3>体验营销</h3>
+            <p>发布会、赛事运营、路演巡展与品牌联名，用体验连接品牌和受众。</p>
+          </div>
+        </article>
+        <article class="capability-card cap-tall tilt-card">
+          <img src="cap-space.jpg" alt="商业空间美陈" loading="lazy" />
+          <div class="capability-copy">
+            <h3>空间美陈</h3>
+            <p>商业美陈、主题装置、节庆场景和互动展陈。</p>
+          </div>
+        </article>
+        <article class="capability-card cap-tall tilt-card">
+          <img src="cap-content.jpg" alt="内容传播视觉" loading="lazy" />
+          <div class="capability-copy">
+            <h3>内容传播</h3>
+            <p>宣传片、短视频、直播和内容营销，延展到屏幕之外。</p>
+          </div>
+        </article>
+        <article class="capability-card tilt-card">
+          <img src="cap-design.jpg" alt="视觉设计与品牌 KV" loading="lazy" />
+          <div class="capability-copy">
+            <h3>视觉设计</h3>
+            <p>品牌视觉、KV、数字视觉和活动物料。</p>
+          </div>
+        </article>
+        <article class="capability-card tilt-card">
+          <img src="cap-stage.jpg" alt="舞美工程与现场搭建" loading="lazy" />
+          <div class="capability-copy">
+            <h3>舞美工程</h3>
+            <p>舞台设计、灯光音响、活动搭建与工程执行。</p>
+          </div>
+        </article>
+        <article class="capability-card cap-wide tilt-card">
+          <img src="cap-ailab.jpg" alt="AI 创意视觉实验" loading="lazy" />
+          <div class="capability-copy">
+            <h3>AI 创意</h3>
+            <p>AI 视觉、数字艺术、概念设计和未来体验，用技术扩展创意边界。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== WORK / CASES ===== -->
+    <!-- FIX #2: This section gets the 2nd eyebrow (max 2 total) -->
+    <!-- FIX #3: Staggered masonry grid, not equal 3-col -->
+    <section class="section section-light work-section" id="work" data-section>
+      <div class="section-heading">
+        <span class="section-kicker reveal-text">Featured work</span>
+        <h2 class="reveal-text">用案例证明想象如何落地。</h2>
+      </div>
+      <div class="work-toolbar" role="tablist" aria-label="案例分类">
+        <button class="filter-button is-active" type="button" data-filter="all">全部</button>
+        <button class="filter-button" type="button" data-filter="experience">体验营销</button>
+        <button class="filter-button" type="button" data-filter="space">空间美陈</button>
+        <button class="filter-button" type="button" data-filter="brand">品牌活动</button>
+        <button class="filter-button" type="button" data-filter="public">公共项目</button>
+      </div>
+      <div class="case-masonry" data-case-grid>
+        <article class="case-card case-large tilt-card" data-category="experience brand" data-title="TCL x LOL 武汉高校电竞联赛" data-meta="电竞赛事 / 品牌联名" data-image="projects/project-001.jpg">
+          <img src="projects/project-001.jpg" alt="TCL x LOL 武汉高校电竞联赛现场" loading="lazy" />
+          <div class="case-copy">
+            <h3>TCL x LOL 武汉高校电竞联赛</h3>
+            <p>把高校流量、电竞内容和品牌互动合成一条完整体验链。</p>
+          </div>
+        </article>
+        <article class="case-card tilt-card" data-category="experience brand" data-title="天猫超级品牌日 x Intel" data-meta="科技营销 / 品牌活动" data-image="projects/project-002.jpg">
+          <img src="projects/project-002.jpg" alt="天猫超级品牌日 x Intel 活动现场" loading="lazy" />
+          <div class="case-copy">
+            <h3>天猫超级品牌日 x Intel</h3>
+            <p>用现场装置、互动内容和直播传播强化新品记忆。</p>
+          </div>
+        </article>
+        <article class="case-card tilt-card" data-category="experience" data-title="海口至高杯 DOTA2 全球赛" data-meta="大型赛事 / 电竞运营" data-image="projects/project-003.jpg">
+          <img src="projects/project-003.jpg" alt="海口至高杯 DOTA2 全球赛现场" loading="lazy" />
+          <div class="case-copy">
+            <h3>海口至高杯 DOTA2 全球赛</h3>
+            <p>赛事级舞美、动线与内容节奏，让观看体验更完整。</p>
+          </div>
+        </article>
+        <article class="case-card tilt-card" data-category="experience space" data-title="光谷京东 MALL 吃谷大会" data-meta="商业活动 / 二次元文化" data-image="projects/project-004.jpg">
+          <img src="projects/project-004.jpg" alt="光谷京东 MALL 吃谷大会现场" loading="lazy" />
+          <div class="case-copy">
+            <h3>光谷京东 MALL 吃谷大会</h3>
+            <p>把商场流量变成可停留、可打卡、可传播的文化现场。</p>
+          </div>
+        </article>
+        <article class="case-card case-tall tilt-card" data-category="space" data-title="武商梦乐园奇幻泡泡节" data-meta="商业美陈 / 沉浸体验" data-image="projects/project-005.jpg">
+          <img src="projects/project-005.jpg" alt="武商梦乐园奇幻泡泡节空间现场" loading="lazy" />
+          <div class="case-copy">
+            <h3>武商梦乐园奇幻泡泡节</h3>
+            <p>用装置、色彩和互动场景制造亲子客群的记忆点。</p>
+          </div>
+        </article>
+        <article class="case-card tilt-card" data-category="public brand" data-title="湖北省重大项目集中开工活动" data-meta="政府活动 / 高规格执行" data-image="projects/project-010.jpg">
+          <img src="projects/project-010.jpg" alt="湖北省重大项目集中开工活动现场" loading="lazy" />
+          <div class="case-copy">
+            <h3>湖北省重大项目集中开工活动</h3>
+            <p>高规格现场执行，把庄重感、秩序感和传播画面统一起来。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== LAB ===== -->
+    <!-- FIX #2: No eyebrow -->
+    <!-- FIX #9: GSAP ScrollTrigger horizontal scroll instead of manual drag + hardcoded translateY -->
+    <section class="section section-dark lab-section" id="lab" data-section>
+      <div class="section-heading">
+        <h2 class="reveal-text">为下一次提案准备更锋利的表达。</h2>
+        <p class="reveal-text">AI 视觉、未来空间、互动艺术和数字内容实验，帮助品牌提前看到体验的可能性。</p>
+      </div>
+      <div class="lab-scroll-wrapper">
+        <div class="lab-track" data-lab-scroll>
+          <figure class="tilt-card">
+            <img src="lab-01.jpg" alt="AI 视觉实验" loading="lazy" />
+            <figcaption>AI Visual</figcaption>
+          </figure>
+          <figure class="tilt-card">
+            <img src="lab-03.jpg" alt="未来空间实验" loading="lazy" />
+            <figcaption>Future Space</figcaption>
+          </figure>
+          <figure class="tilt-card">
+            <img src="lab-05.jpg" alt="互动艺术实验" loading="lazy" />
+            <figcaption>Interactive Art</figcaption>
+          </figure>
+          <figure class="tilt-card">
+            <img src="lab-06.jpg" alt="数字内容实验" loading="lazy" />
+            <figcaption>Digital Content</figcaption>
+          </figure>
+          <figure class="tilt-card">
+            <img src="lab-02.jpg" alt="概念设计" loading="lazy" />
+            <figcaption>Concept Design</figcaption>
+          </figure>
+          <figure class="tilt-card">
+            <img src="lab-04.jpg" alt="生成艺术" loading="lazy" />
+            <figcaption>Generative Art</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <!-- FIX #2: No eyebrow -->
+    <!-- FIX #3: Horizontal scroll-snap pills instead of vertical list -->
+    <section class="section section-light process-section" aria-label="工作流程">
+      <div class="section-heading">
+        <h2 class="reveal-text">从 brief 到复盘，减少"现场才发现"的风险。</h2>
+      </div>
+      <div class="process-scroll">
+        <div class="process-pill reveal-text">
+          <span class="pill-num">01</span>
+          <strong>策略拆解</strong>
+          <p>目标、受众、预算、场地和传播目标先对齐。</p>
+        </div>
+        <div class="process-pill reveal-text">
+          <span class="pill-num">02</span>
+          <strong>概念原型</strong>
+          <p>用视觉稿、动线图和 AI 草图快速验证方向。</p>
+        </div>
+        <div class="process-pill reveal-text">
+          <span class="pill-num">03</span>
+          <strong>现场执行</strong>
+          <p>施工、舞美、人员、物料、彩排和风险预案同步推进。</p>
+        </div>
+        <div class="process-pill reveal-text">
+          <span class="pill-num">04</span>
+          <strong>内容回收</strong>
+          <p>将现场沉淀成视频、图文、复盘素材和下一次提案资产。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <!-- FIX #2: No eyebrow -->
+    <!-- Full-bleed editorial CTA, not another split -->
+    <section class="contact-section section-dark" id="contact" data-section>
+      <div class="contact-inner">
+        <h2 class="reveal-text">准备让下一次品牌出现更有记忆点吗？</h2>
+        <p class="reveal-text">如果你需要一个既能想方案、也能把现场撑起来的团队，可以从一个 brief 开始。</p>
+        <div class="contact-actions">
+          <a class="button button-primary magnetic" href="tel:18153570673">18153570673</a>
+          <a class="button button-ghost magnetic" href="mailto:hello@xiyi.studio">hello@xiyi.studio</a>
+        </div>
+        <div class="contact-meta">
+          <span>湖北省武汉市</span>
+          <span>Make the moment</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== DIALOGS ===== -->
+  <dialog class="case-dialog" data-case-dialog aria-label="案例详情">
+    <button class="dialog-close" type="button" data-close-case aria-label="关闭">&times;</button>
+    <img data-case-dialog-image alt="" />
+    <div>
+      <span data-case-dialog-meta></span>
+      <h3 data-case-dialog-title></h3>
+      <p>从策略、视觉、空间到现场执行，项目的每个节点都服务于同一个目标：让品牌被看见、被体验、被记住。</p>
+    </div>
+  </dialog>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
